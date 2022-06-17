@@ -128,6 +128,10 @@ p.search-bar input {
   background-color: #ccccff;
 }
 
+p.search-bar input:active, p.search-bar input:focus {
+  outline: 2px solid dodgerblue;
+}
+
 p.search-bar button {
   border-style: hidden;
   background: none;
@@ -158,6 +162,14 @@ p.search-bar button {
   width: 40px;
 }
 
+.container.upper-right > button.profile-picture img:hover {
+  opacity: 0.5;
+}
+.container.upper-right > button.profile-picture:active {
+  outline: 2px solid dodgerblue;
+}
+
+
 .container.upper-right > button:last-child {
   padding-right: 12px;
   padding-top: 0;
@@ -165,6 +177,14 @@ p.search-bar button {
   border-style: none;
   font-size: 1.2rem;
   font-weight: bold;
+}
+
+.container.upper-right > button:last-child:hover {
+  opacity: 0.5;
+}
+
+.container.upper-right > button:last-child:active {
+  color: #ccccff;
 }
 
 .container.lower-right > button {
@@ -176,7 +196,16 @@ p.search-bar button {
   color: white;
   font-size: 1.1rem;
   font-weight: bold;
-  border-radius: 18px;
+  border-radius: 15px;
+}
+
+.container.lower-right > button:hover {
+  background-color: rgba(30, 143, 255, 0.700);
+  color: white;
+}
+
+.container.lower-right > button:active {
+  outline: 2px solid dodgerblue;
 }
 
 .greeting.image-container {
@@ -333,4 +362,12 @@ div.container.lower-left div.name-container {
 
 .container.title {
   align-items: end;
+}
+
+svg.bell-icon path {
+  fill: #ccccff;
+}
+
+svg.bell-icon.fill-icon path {
+  fill: dodgerblue;
 }
