@@ -43,7 +43,8 @@
   grid-template-columns: 2fr 1fr;
 
   background-color: white;
-  padding: 1rem;
+  padding: 1rem 2rem;
+  align-items: center;
 }
 
 .container.main-content {
@@ -99,7 +100,7 @@ div.sidebar .item.dashboard {
   grid-row: 2 / 3;
 
   display: flex;
-  gap: 16px;
+  gap: 25px;
 }
 
 .container.header > div:nth-child(4) {
@@ -139,6 +140,7 @@ p.search-bar button {
 
 .container.upper-right > button.subscribe {
   aspect-ratio: 1 / 1;
+  padding-top: 0;
   height: 30px;
   background: none;
   border-style: hidden;
@@ -147,16 +149,18 @@ p.search-bar button {
 
 .container.upper-right > button.profile-picture {
   aspect-ratio: 1 / 1;
-  height: 30px;
+  padding-top: 0;
+  height: 40px;
   background: none;
   border-style: none;
   border-radius: 25px;
-  max-width: 50px;
+  overflow: hidden;
+  width: 40px;
 }
 
 .container.upper-right > button:last-child {
-  margin-top: -10px;
   padding-right: 12px;
+  padding-top: 0;
   background: none;
   border-style: none;
   font-size: 1.2rem;
@@ -165,7 +169,8 @@ p.search-bar button {
 
 .container.lower-right > button {
   max-height: 40px;
-  min-width: 80px;
+  width: 100px;
+  padding: 10px 25px;
   background-color: dodgerblue;
   border-style: none;
   color: white;
@@ -174,14 +179,23 @@ p.search-bar button {
   border-radius: 18px;
 }
 
+.greeting.image-container {
+  aspect-ratio: 1 / 1;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+div.container.lower-left div.name-container {
+  gap: 0;
+  padding-right: 0;
+}
+
 .container.lower-left > img,
 .container.lower-left > div.greeting {
   display: block;
   font-weight: bold;
-}
-
-.container.lower-left > div.greeting {
-  padding: 8px;
 }
 
 .container.lower-left p.user-name {
